@@ -1,7 +1,5 @@
 package rent.Service;
 
-import java.util.List;
-
 import rent.model.Books;
 
 public interface BooksInterface {
