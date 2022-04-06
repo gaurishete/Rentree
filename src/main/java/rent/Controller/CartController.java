@@ -14,7 +14,7 @@ import rent.Service.CartService;
 import rent.model.Cart;
 
 @RestController
-@CrossOrigin("*")
+@CrossOrigin(origins = "http://localhost:3000")
 public class CartController {
 	
 	@Autowired

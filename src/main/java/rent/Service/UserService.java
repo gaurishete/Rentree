@@ -59,7 +59,8 @@ public class UserService implements UserServiceInterface {
 			 foundUser.setAddress(u.getAddress());
 			 foundUser.setContactNumerPrimary(u.getContactNumerPrimary());
 			 foundUser.setEmail(u.getEmail());
-			 foundUser.setName(u.getName());
+			 foundUser.setFirstName(u.getFirstName());
+			 foundUser.setLastName(u.getLastName());
 			 foundUser.setPin(u.getPin());
 			 userDao.save(foundUser);
 			 return true;

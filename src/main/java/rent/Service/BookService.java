@@ -1,5 +1,6 @@
 package rent.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -64,6 +65,13 @@ public class BookService implements BooksInterface {
 			return gotBook;
 		}
 		return null;
+	}
+
+
+	@Override
+	public List<Books> getList() {
+		return bkDao.findAll();
+		
 	}
 	
 	
